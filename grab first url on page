@@ -1,0 +1,12 @@
+
+#take code from website
+page =('<div id="top_bin"><div id="top_content" class="width960">'
+'<div class="udacity float-left"><a href="http://udacity.com">')
+#print page
+start_link = page.find('a href="')
+#print start_link
+#print page[start_link +8:]
+end_link = page.find('">', start_link)
+#print end_link
+url = page[start_link +8:end_link]
+print url
