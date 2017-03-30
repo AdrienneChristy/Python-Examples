@@ -1,0 +1,5 @@
+def square(a):
+    math_calc = a * a
+    return math_calc
+
+print square(5)
