@@ -9,9 +9,8 @@
 def find_second (a, b):
     find_first = a.find(b)
     print find_first
-    second = a.find(b, find_first + 1)
-    return second
-    
+    return = a.find(b, find_first + 1)
+
 
 
 
