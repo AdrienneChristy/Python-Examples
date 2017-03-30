@@ -1,5 +1,5 @@
 def square(a):
-    math_calc = a * a
-    return math_calc
+    
+    return a*a
 
 print square(5)
