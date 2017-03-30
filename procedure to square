@@ -1,5 +1,4 @@
-def square(a):
-    
-    return a*a
+def square(n):
+   return n * n
 
 print square(5)
