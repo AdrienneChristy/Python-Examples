@@ -8,11 +8,10 @@
 # countdown(3)
 # instead of print countdown(3).
 
-def countdown(a):
-    x = a
-    while x > 0:
+def countdown(n):
+    while n > 0:
         print x
-        x = x - 1
+        n = n - 1
     print "Blastoff!"
 
 
