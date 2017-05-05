@@ -1,0 +1,45 @@
+# The range of a set of values is the maximum value minus the minimum
+# value. Define a procedure, set_range, which returns the range of three input
+# values.
+
+# Hint: the procedure, biggest which you coded in this unit
+# might help you with this question. You might also like to find a way to
+# code it using some built-in functions.
+
+          
+                
+def set_range (a,b,c):
+    if a >= b: 
+        if a >= c:
+            biggest = a
+        else:
+            biggest = c
+    else: 
+        if b >= a:
+            if b >= c:
+                biggest = b
+            else:
+                biggest = c
+    print 'biggest = ' + str(biggest)
+    if a <= b: 
+        if a <= c:
+            smallest = a
+        else:
+            smallest = c
+    else: 
+        if b <= a:
+            if b <= c:
+                smallest = b
+            else:
+                smallest = c
+    print 'smallest = ' + str(smallest)
+    return biggest - smallest
+    
+    
+
+
+print set_range(10, 4, 7)
+#>>> 6  # since 10 - 4 = 6
+
+print set_range(1.1, 7.4, 18.7)
+#>>> 17.6 # since 18.7 - 1.1 = 17.6
